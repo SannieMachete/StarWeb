@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Web Design Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- CURSOR TRAIL -->
+<canvas id="cursor-trail" style="position:fixed;top:0;left:0;pointer-events:none;z-index:9999;width:100vw;height:100vh"></canvas>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/27760397854" target="_blank" class="wa-float" title="Chat on WhatsApp">
+  <div class="wa-pulse"></div>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="logo">
+    <div class="logo-mark">⟨/⟩</div>
+    <div>
+      <div class="logo-name">STAR WEB</div>
+      <div class="logo-sub">Design Studio</div>
+    </div>
+  </a>
+  <div class="nav-right">
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#about">About</a>
+    <a href="#contact" class="nav-cta btn">Get a Quote</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="pill reveal">
+      <span class="pill-dot"></span>
+      Pretoria · South Africa · Available Now
+    </div>
+    <h1 class="hero-title reveal reveal-d1">
+      WE DESIGN
+      <span class="line2">WEBSITES</span>
+      <span class="line3">THAT GROW</span>
+      YOUR BUSINESS
+    </h1>
+    <p class="hero-desc reveal reveal-d2">Modern. Responsive. Strategic. We create websites that engage your audience, show up on Google, and turn visitors into loyal customers.</p>
+    <div class="hero-btns reveal reveal-d3">
+      <a href="#contact" class="btn btn-glow">Start My Website</a>
+      <a href="#pricing" class="btn btn-ghost">Build a Quote →</a>
+    </div>
+    <div class="hero-trust reveal reveal-d3">
+      <div class="trust-item"><span class="trust-dot"></span>Professional & Reliable</div>
+      <div class="trust-item"><span class="trust-dot"></span>Secure & Trusted</div>
+      <div class="trust-item"><span class="trust-dot"></span>Support You Can Count On</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-inner" id="mq"></div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <span class="s-label reveal">What We Do</span>
+  <h2 class="s-title reveal reveal-d1">OUR SERVICES</h2>
+  <div class="bar reveal reveal-d1"></div>
+  <p class="s-desc reveal reveal-d2">Everything you need to launch, grow, and dominate online — designed beautifully and built to convert.</p>
+
+  <div class="services-grid">
+    <div class="svc reveal" data-svc>
+      <div class="svc-icon" style="font-size:1.1rem;font-weight:800;color:var(--accent);font-family:'Bebas Neue',sans-serif">WD</div>
+      <div class="svc-num">01</div>
+      <h3>Custom Web Design</h3>
+      <p>Unique, brand-matched designs that leave a lasting impression and stand out from your competition.</p>
+    </div>
+    <div class="svc reveal reveal-d1" data-svc>
+      <div class="svc-icon" style="font-size:1.1rem;font-weight:800;color:var(--accent);font-family:'Bebas Neue',sans-serif">RD</div>
+      <div class="svc-num">02</div>
+      <h3>Responsive & Modern</h3>
+      <p>Flawless on every device — phone, tablet, laptop. Your site always looks perfect.</p>
+    </div>
+    <div class="svc reveal reveal-d2" data-svc>
+      <div class="svc-icon" style="font-size:1.1rem;font-weight:800;color:var(--accent);font-family:'Bebas Neue',sans-serif">SEO</div>
+      <div class="svc-num">03</div>
+      <h3>Fast & SEO Friendly</h3>
+      <p>Built for speed. Optimized for visibility. Your customers will find you on Google.</p>
+    </div>
+    <div class="svc reveal" data-svc>
+      <div class="svc-icon" style="font-size:1.1rem;font-weight:800;color:var(--accent);font-family:'Bebas Neue',sans-serif">CX</div>
+      <div class="svc-num">04</div>
+      <h3>Built to Convert</h3>
+      <p>Strategic layouts that guide visitors to take action — calls, bookings, purchases.</p>
+    </div>
+    <div class="svc reveal reveal-d1" data-svc>
+      <div class="svc-icon" style="font-size:1.1rem;font-weight:800;color:var(--accent);font-family:'Bebas Neue',sans-serif">GB</div>
+      <div class="svc-num">05</div>
+      <h3>Google Business Setup</h3>
+      <p>Get found on Google Maps and attract local clients searching for your services.</p>
+    </div>
+    <div class="svc reveal reveal-d2" data-svc>
+      <div class="svc-icon" style="font-size:1.1rem;font-weight:800;color:var(--accent);font-family:'Bebas Neue',sans-serif">DN</div>
+      <div class="svc-num">06</div>
+      <h3>Domain Registration</h3>
+      <p>Secure your business name online with ease. We handle everything from start to finish.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE PRICING BUILDER -->
+<section id="pricing">
+  <span class="s-label reveal">Transparent Pricing</span>
+  <h2 class="s-title reveal reveal-d1">BUILD YOUR<br>QUOTE INSTANTLY</h2>
+  <div class="bar reveal reveal-d1"></div>
+  <p class="s-desc reveal reveal-d2">Select what you need and watch your price update in real time. No hidden costs, ever.</p>
+
+  <div class="pricing-builder reveal">
+    <div class="pricing-grid">
+      <div class="pricing-options" id="pricingOptions"></div>
+      <div class="price-display">
+        <div class="price-total-label">Your Estimated Total</div>
+        <div class="price-total" id="priceTotal">R0</div>
+        <p class="price-note" id="priceNote">Select services above to build your quote.</p>
+        <div class="price-includes" id="priceIncludes" style="display:none">
+          <p>Included:</p>
+          <div id="includesList"></div>
+        </div>
+        <a href="#contact" class="btn btn-glow" style="margin-top:1.5rem;width:100%;justify-content:center;font-size:.85rem" id="priceQuoteBtn">
+          Get This Quote
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS TIMELINE -->
+<section id="process">
+  <span class="s-label reveal">How It Works</span>
+  <h2 class="s-title reveal reveal-d1">FROM IDEA TO<br>LIVE IN 4 STEPS</h2>
+  <div class="bar reveal reveal-d1"></div>
+
+  <div class="timeline">
+    <div class="t-step reveal">
+      <div class="t-dot"></div>
+      <div class="t-num">01</div>
+      <h3>Discovery & Brief</h3>
+      <p>We chat on WhatsApp to understand your business, goals, and vision. You tell us what you need — we listen carefully.</p>
+    </div>
+    <div class="t-step reveal reveal-d1">
+      <div class="t-dot"></div>
+      <div class="t-num">02</div>
+      <h3>Design & Build</h3>
+      <p>We design and develop your site with your brand in mind — responsive, fast, and optimized from the very first line of code.</p>
+    </div>
+    <div class="t-step reveal reveal-d2">
+      <div class="t-dot"></div>
+      <div class="t-num">03</div>
+      <h3>Review & Refine</h3>
+      <p>You review the site and we refine it together until it's exactly what you envisioned. Your feedback shapes every detail.</p>
+    </div>
+    <div class="t-step reveal reveal-d3">
+      <div class="t-dot"></div>
+      <div class="t-num">04</div>
+      <h3>Launch & Support</h3>
+      <p>We go live! Your site is deployed, Google profile set up, and we're still here for ongoing support whenever you need us.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <span class="s-label reveal">About Us</span>
+  <h2 class="s-title reveal reveal-d1">WHO WE ARE</h2>
+  <div class="bar reveal reveal-d1"></div>
+  <p style="color:var(--gray);line-height:1.75;font-size:1rem;max-width:600px;margin-bottom:2.5rem" class="reveal reveal-d2">
+    We are a Pretoria-based web design studio passionate about building websites that work hard for your business. Every site we deliver is responsive, fast, and crafted to convert visitors into customers.
+  </p>
+  <p style="color:var(--gray);line-height:1.75;font-size:1rem;max-width:600px;margin-bottom:2.5rem" class="reveal reveal-d2">
+    Want to see examples of our work? We are happy to share our portfolio privately. Reach out via WhatsApp and we will walk you through what we have built.
+  </p>
+  <a href="https://wa.me/27760397854?text=Hi%2C%20I%27d%20like%20to%20see%20your%20portfolio%20of%20work%20please." target="_blank" class="btn btn-glow reveal reveal-d3">View Our Portfolio on WhatsApp</a>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-section">
+  <h2>LET'S BUILD SOMETHING GREAT TOGETHER</h2>
+  <p>Ready for a website that sets your business apart?</p>
+  <a href="#contact" class="btn-cta">GET YOUR WEBSITE + GOOGLE PRESENCE TODAY</a>
+</div>
+
+<!-- CONTACT / BOOKING -->
+<section id="contact">
+  <span class="s-label reveal">Book a Consultation</span>
+  <h2 class="s-title reveal reveal-d1">GET YOUR FREE<br>CONSULTATION</h2>
+  <div class="bar reveal reveal-d1"></div>
+
+  <div class="contact-layout">
+    <div>
+      <div class="contact-left">
+        <h3 class="reveal">Fill in the form — we'll reply on WhatsApp within 24 hours.</h3>
+        <p class="reveal reveal-d1">No commitment needed. Just a friendly chat about your project and what we can build together.</p>
+      </div>
+      <div class="c-info-items reveal reveal-d2">
+        <div class="c-item">
+          <div class="c-icon" style="font-size:.7rem;font-weight:800;color:var(--accent);font-family:'Bebas Neue',sans-serif;letter-spacing:1px">MAIL</div>
+          <div class="c-detail">
+            <div class="lbl">Email</div>
+            <div class="val">sanniemachete@gmail.com</div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon" style="font-size:.7rem;font-weight:800;color:var(--accent);font-family:'Bebas Neue',sans-serif;letter-spacing:1px">WA</div>
+          <div class="c-detail">
+            <div class="lbl">WhatsApp</div>
+            <div class="val">076 039 7854</div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon" style="font-size:.7rem;font-weight:800;color:var(--accent);font-family:'Bebas Neue',sans-serif;letter-spacing:1px">LOC</div>
+          <div class="c-detail">
+            <div class="lbl">Based In</div>
+            <div class="val">Pretoria, South Africa</div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon" style="font-size:.7rem;font-weight:800;color:var(--accent);font-family:'Bebas Neue',sans-serif;letter-spacing:1px">24H</div>
+          <div class="c-detail">
+            <div class="lbl">Response Time</div>
+            <div class="val">Usually within a few hours</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card reveal reveal-d1">
+      <div class="fc-title">Project Booking Form</div>
+      <div class="fc-sub">Your details go straight to our WhatsApp — fast, simple, secure.</div>
+
+      <div class="f2">
+        <div class="fg"><label>Your Name *</label><input type="text" id="fname" placeholder="e.g. Thabo Nkosi"></div>
+        <div class="fg"><label>Phone / WhatsApp *</label><input type="tel" id="fphone" placeholder="e.g. 082 000 0000"></div>
+      </div>
+      <div class="fg"><label>Email Address</label><input type="email" id="femail" placeholder="you@example.com"></div>
+      <div class="fg"><label>Business Name *</label><input type="text" id="fbusiness" placeholder="e.g. Mama's Hair Salon"></div>
+      <div class="fg">
+        <label>Service Needed *</label>
+        <select id="fservice">
+          <option value="">— Pick a service —</option>
+          <option>Custom Website Design</option>
+          <option>E-Commerce Store</option>
+          <option>Google Business Profile Setup</option>
+          <option>Domain Registration</option>
+          <option>Full Package (Website + Google Presence)</option>
+          <option>Other / Let's Discuss</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label>Budget Range</label>
+        <select id="fbudget">
+          <option value="">— Select a range —</option>
+          <option>Under R2,000</option>
+          <option>R2,000 – R5,000</option>
+          <option>R5,000 – R10,000</option>
+          <option>R10,000+</option>
+          <option>Let's discuss</option>
+        </select>
+      </div>
+      <div class="fg"><label>Tell us about your project</label><textarea id="fmessage" placeholder="Describe your business, what you need, any ideas or examples you love..."></textarea></div>
+
+      <button class="wa-btn" onclick="sendToWhatsApp()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        SEND
+      </button>
+      <p class="f-note">Opens WhatsApp with all your details pre-filled. No spam, ever.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div><strong style="color:var(--white)">Star Web Design Studio</strong> · Pretoria, South Africa · © 2026</div>
+  <div>Built by <a href="mailto:sanniemachete@gmail.com">Sannie Machete</a></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
